@@ -9,6 +9,7 @@
     flex-direction: column;
     width: 1140px;
     padding: 45px;
+    gap: 20px;
 }
 
 .nav {

@@ -12,7 +12,9 @@ const SideNav = () => {
         </div>
 
         <div className='sidemenu'>
-            <HomeIcon />
+            <div className='active'>
+                <HomeIcon style={{color: "#FF0000"}}/>
+            </div>
             <PieChart />
             <ModeComment />
             <AccountBalanceWallet />

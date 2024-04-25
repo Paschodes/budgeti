@@ -1,14 +1,80 @@
 .chart {
     width: 785.33px;
     display: flex;
+    flex-direction: column;
 }
 
 .bulldata {
     display: flex;
+    gap: 92px;
 }
 
-.bull {
+.bull, .order {
     display: flex;
-    width: 200.72px;
+    width: 200.96px;
     height: 76.4px;
+    align-items: center;
+    gap: 20px;
+    justify-content: center;
+    /* background: #F5F5FC; */
+    background: #FFFFFF;
+    border-radius: 15px;
+}
+
+.rate {
+    width: 42.96px;
+    height: 33.16px;
+}
+
+.visit {
+    display: flex;
+    flex-direction: column;
+}
+
+.word {
+    font-size: 10px;
+    font-weight: 700;
+    color: #A49EDB;
+    margin: 0;
+}
+
+.num, .numorder {
+    color: #000013;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+
+.order {
+    background: #FF392B;
+}
+.numorder {
+    color: #FFFFFF;
+}
+
+.chartDown {
+    display: flex;
+}
+
+.poster {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+    /* justify-content: center; */
+}
+.posterInfo h5 {
+    margin: 0;
+    color: #000013;
+    font-weight: 500;
+}
+.posterInfo p {
+    margin: 0;
+    color: #C4BDD5;
+}
+.activity {
+    display: flex;
+}
+
+.when {
+    display: flex;
 }
