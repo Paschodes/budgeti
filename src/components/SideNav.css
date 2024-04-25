@@ -2,4 +2,14 @@
     background: #3326AE;
     width: 111.83px;
     height: 775.6px;
+    align-items: center;
+    display: flex;
+    flex-direction: column;
+    gap: 80px;
+}
+
+.sidemenu {
+    display: flex;
+    flex-direction: column;
+    gap: 50px;
 }

@@ -1,18 +1,21 @@
 import React from 'react'
 import './SideNav.css'
+import logo from '../assets/logo.svg'
+import HomeIcon from '@mui/icons-material/Home';
+import { AccountBalanceWallet, ModeComment, PieChart } from '@mui/icons-material';
 
 const SideNav = () => {
   return (
     <div className='sidenav'>
         <div className='logo'>
-            <img src="" alt="" />
+            <img src={logo} alt="logo" />
         </div>
 
         <div className='sidemenu'>
-            <p>Home</p>
-            <p>Stat</p>
-            <p>chat</p>
-            <p>wallet</p>
+            <HomeIcon />
+            <PieChart />
+            <ModeComment />
+            <AccountBalanceWallet />
         </div>
     </div>
   )

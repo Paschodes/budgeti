@@ -7,8 +7,55 @@
 .content {
     display: flex;
     flex-direction: column;
+    width: 1140px;
+    padding: 45px;
 }
 
 .nav {
     display: flex;
+    height: 50px;
+    justify-content: space-between;
+    align-items: center;
+    width: 1140px;
+    color: #000013;
+    font-weight: 500;
 }
+.navleft {
+    display: flex;
+    gap: 70px;
+}
+.navmenu {
+    display: flex;
+    gap: 60px;
+}
+.navright {
+    display: flex;
+    gap: 20px;
+}
+.navinput {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px;
+    gap: 8px;
+    width: 420.57px;
+    height: 32.69px;
+    /* border: 0.5px solid #010E2A; */
+    border-radius: 12px;
+    background: #F5F5FC;
+}
+.navinput input {
+    width: 376.24px;
+    height: 16px;
+    line-height: 24px;
+    color: #010E2A;
+    border: 0;
+    background: #F5F5FC;
+}
+
+.contentBody {
+    display: flex;
+    gap: 45px;
+    width: 1140px;
+}
+
