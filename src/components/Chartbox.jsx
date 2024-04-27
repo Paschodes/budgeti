@@ -68,7 +68,7 @@ export default class Chartbox extends PureComponent {
         <XAxis dataKey="name" />
         <YAxis />
         <Tooltip />
-        <Line type="monotone" dataKey="hr" stroke="#8884d8" fill="#8884d8" />
+        <Line type="monotone" dataKey="hr" stroke="#FF0000" fill="#FF0000" />
       </LineChart>
         
     </div>

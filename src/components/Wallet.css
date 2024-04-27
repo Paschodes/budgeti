@@ -1,3 +1,120 @@
 .wallet {
+    width: 251px;
+    padding: 30px;
+    background: #F5F5FC;
+    border-radius: 15px;
+    display: flex;
+    flex-direction: column;
+}
+
+.walletTop {
+    width: 251px;
+    height: 15rem;
+}
+
+.edit {
+    width: 251px;
+    display: flex;
+    justify-content: flex-end;
+    margin-top: 10px;
+    cursor: pointer;
+}
+
+.pie {
     width: 310px;
+    /* margin-left: 16rem; */
+    position: relative;
+    top: -6rem;
+    display: flex;
+    justify-content: center;
+}
+
+.pie span {
+    font-weight: bolder;
+    font-size: 20px;
+    color: #3326AE;
+    position: absolute;
+    /* right: 12rem; */
+    margin-top: 10rem;
+    margin-right: 45px;
+    align-items: center;
+    text-align: center;
+    width: 80px;
+    height: 80px;
+    background: #F5F5FC;
+    border-radius: 42px;
+    display: flex;
+    justify-content: center;
+}
+
+.editMoney {
+    display: flex;
+    width: 68.05px;
+    height: 34px;
+    border-radius: 10px;
+    background: #3326AE;
+    color: #FFFFFF;
+    font-size: 11px;
+    justify-content: center;
+    align-items: center;
+    top: 9rem;
+    right: 15px;
+    position: absolute;  
+}
+
+.transact {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+}
+
+.card {
+    display: flex;
+    flex-direction: column;
+    gap: 30px;
+    margin-bottom: 50px;
+}
+.visacard {
+    width: 250px;
+}
+
+.classHead, .tranHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 20px;
+}
+.classHead h4, .tranHead h4 {
+    margin: 0;
+}
+
+.taxi {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    font-size: 15px;
+    font-weight: 500;
+    color: #000013;
+}
+.taxiLeft {
+    display: flex;
+    align-items: center;
+    gap: 20px;
+}
+.localtaxi {
+    width: 45px;
+    height: 45px;
+    color: #FF0000;
+    background: #FFFFFF;
+    align-items: center;
+    justify-content: center;
+    display: flex;
+    border-radius: 10px;
+}
+.taxiTime p {
+    margin: 0;
+}
+.taxiTime span {
+    color: #A49EDB;
+    font-weight: 400;
 }

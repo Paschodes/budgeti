@@ -5,6 +5,8 @@ import bearish from '../assets/bearish.svg'
 import Chartbox from './Chartbox'
 import profile from '../assets/profile.png'
 import { Avatar } from '@mui/material'
+import { AccessTimeFilled, PlayCircle, Star } from '@mui/icons-material'
+import ChartStat from './ChartStat'
 
 const Chart = () => {
   return (
@@ -35,10 +37,14 @@ const Chart = () => {
             </div>
         </div>
 
-        <div>
-            <h2>Update</h2>
+        <div className='statistics'>
+            <div>
+                <h2>Statistics</h2>
+                <p>year</p>
+            </div>
+            <ChartStat />
         </div>
-        
+
         <div className='chartDown'>
             <div>
                 <Chartbox />
@@ -52,21 +58,24 @@ const Chart = () => {
                         <p>Business trainer</p>
                     </div>
                 </div>
-                <h4>How to properly manage your personal budget</h4>
+                <h4 style={{fontSize: "14px"}}>How to properly manage your personal budget</h4>
                 <div className='activity'>
-                    <div>
+                    <div className='actIcon'>
+                        <PlayCircle style={{color: "#3326AE"}}/>
                         <p>Video</p>
                     </div>
-                    <div>
+                    <div className='actIcon'>
+                        <AccessTimeFilled style={{color: "#00C3F8"}}/>
                         <p>15 mins</p>
                     </div>
-                    <div>
+                    <div className='actIcon'>
+                        <Star style={{color: "#FF0000"}}/>
                         <p>12 likes</p>
                     </div>
                 </div>
                 <div className='when'>
                     <p>5 days ago</p>
-                    <button>
+                    <button className='whenBtn'>
                         <p>connect</p>
                     </button>
                 </div>
