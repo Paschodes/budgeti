@@ -51,9 +51,15 @@ export default class Chartbox extends PureComponent {
   render () {
   return (
     <div>
-      <h4>Spent time</h4>
+      <div style={{display: "flex", alignItems: "center", justifyContent: "space-between"}}>
+        <h4 style={{marginTop: "0"}}>Spent time</h4>
+        <div style={{width: "58px", height: "29px", background: "#FF0000", borderRadius: "10px",
+         alignItems: "center", justifyContent: "center", display: "flex", color: "#FFFFFF"}}>
+          <span style={{fontSize: "10px"}}>4h 26min</span>
+        </div>
+      </div>
       <LineChart
-        width={500}
+        width={420}
         height={200}
         data={data}
         syncId="anyId"

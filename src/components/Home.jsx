@@ -1,11 +1,13 @@
 import React from 'react'
 import './Home.css'
-import profile from '../assets/profile.png'
 import SideNav from './SideNav';
-import { Notifications, Search } from '@mui/icons-material';
-import { Avatar } from '@mui/material';
+import { Search} from '@mui/icons-material';
 import Chart from './Chart';
 import Wallet from './Wallet';
+import logo from '../assets/logo.svg'
+import Imgdrop from './dropdowns/Imgdrop';
+import Notidrop from './dropdowns/Notidrop';
+import Mobile from './mobile/Mobile';
 
 const Home = () => {
   return (
@@ -14,6 +16,7 @@ const Home = () => {
 
         <div className='content'>
             <nav className='nav'>
+                <img src={logo} alt="logo" className='homelogo'/>
                 <div className='navleft'>
                     <div className='navinput'>
                         <Search />
@@ -26,17 +29,21 @@ const Home = () => {
                         <p>Help</p>
                     </div>
                 </div>
+
                 <div className='navright'>
-                    <Notifications />
-                    <Avatar alt="my profile" src={profile} sx={{ width: 24, height: 24 }}/>
-                </div>
-                
+                    <Notidrop />
+                    <Imgdrop />
+                </div>  
             </nav>
 
             <div className='contentBody'>
                 <Chart />
                 <Wallet />
             </div>
+            
+        </div>
+        <div className='homeMobile'>
+            <Mobile />
         </div>
     </div>
   )
@@ -46,13 +53,7 @@ export default Home;
 
 
 // import { useState } from 'react'
-// import viteLogo from '/vite.svg'
 // const [count, setCount] = useState(0)
-{/* <div>
-        <a href="https://react.dev" target="_blank">
-          <img src={reactLogo} className="logo react" alt="React logo" />
-        </a>
-      </div> */}
       
     //   <div className="card">
         {/* <button onClick={() => setCount((count) => count + 1)}>

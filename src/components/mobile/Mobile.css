@@ -1,0 +1,137 @@
+.mobile {
+    max-width: 410px;
+    display: flex;
+    flex-direction: column;
+    padding: 20px;
+    gap: 50px;
+    position: relative;
+}
+
+.mobilenav {
+    max-width: 380px;
+    display: flex;
+    justify-content: space-between;
+}
+.mobnot {
+    display: flex;
+    gap: 20px;
+}
+
+.clicks {
+    display: flex;
+    max-width: 410px;
+    justify-content: center;
+}
+.blue, .white {
+    width: 70px;
+    height: 45px;
+    color: #FFFFFF;
+    background: #00C3F8;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-radius: 13px;
+    cursor: pointer;
+}
+.white {
+    background: #FFFFFF;
+    color: #F5F5FC;
+}
+
+.mobchart {
+    max-width: 410px;
+}
+
+.mobbulldata {
+    display: flex;
+    gap: 50px;
+    max-width: 400px;;
+}
+.mobBull, .mobOrder {
+    display: flex;
+    flex-direction: column;
+    width: 100.96px;
+    height: 110px;
+    align-items: center;
+    gap: 25px;
+    justify-content: center;
+    background: #FFFFFF;
+    border-radius: 15px;
+    padding: 10px 0;
+}
+.mobrate {
+    width: 42.96px;
+    height: 33.16px;
+}
+.mobvisit {
+    display: flex;
+    flex-direction: column;
+}
+.mobword {
+    font-size: 10px;
+    font-weight: 700;
+    color: #A49EDB;
+    margin: 0;
+}
+.mobnum, .mobnumorder {
+    color: #000013;
+    font-weight: 700;
+    font-size: 20px;
+    margin: 0;
+}
+.mobOrder {
+    background: #FF392B;
+}
+.mobnumorder {
+    color: #FFFFFF;
+}
+
+
+.mobstats {
+    display: flex;
+    flex-direction: column;
+    max-width: 340px;
+    padding: 25px;
+    /* background: #F5F5FC; */
+    border-radius: 20px;
+}
+.mobstatHead {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+.mobrep-year {
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    padding: 8px 10px;
+    width: 85px;
+    height: 36px;
+    background: #FFFFFF;
+    border-radius: 20px;
+    margin-top: 20px;
+    border: none;
+    color: #3326AE;
+}
+
+.foot {
+    background: #3326AE;
+    min-width:380px;
+    height: 75px;
+    align-items: center;
+    display: flex;
+    gap: 50px;
+    justify-content: center;
+    border-radius: 35px;
+    position: fixed;
+    bottom: 0;
+}
+.footActive {
+    background: #FFFFFF;
+    border-radius: 15px;
+    width: 50px;
+    height: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}

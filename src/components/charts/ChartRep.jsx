@@ -1,5 +1,4 @@
 import React from 'react';
-// import chartstyle from './PChart.module.css'
 import { PieChart, Pie, Cell, ResponsiveContainer } from 'recharts';
 
 const data = [

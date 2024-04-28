@@ -1,5 +1,6 @@
 import React from 'react'
 import './SideNav.css'
+import './Home.css'
 import logo from '../assets/logo.svg'
 import HomeIcon from '@mui/icons-material/Home';
 import { AccountBalanceWallet, ModeComment, PieChart } from '@mui/icons-material';

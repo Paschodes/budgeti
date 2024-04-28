@@ -1,21 +1,56 @@
 import React from 'react'
-import './Wallet.css'
-import netflix from '../assets/netflix.png'
-import card from '../assets/card.png'
-import ChartRep from './charts/ChartRep';
-
+import './Phone.css'
+import './Mobile.css'
+import '../Home.css'
+import logo from '../../assets/logo.svg'
+import Notidrop from '../dropdowns/Notidrop';
+import Imgdrop from '../dropdowns/Imgdrop';
+import netflix from '../../assets/netflix.png'
+import card from '../../assets/card.png'
 import { AddBox, DriveFileRenameOutline, LocalTaxi, MoreHoriz, ShoppingBag } from '@mui/icons-material';
+import ChartRep from '../charts/ChartRep';
+import HomeIcon from '@mui/icons-material/Home';
+import { AccountBalanceWallet, ModeComment, PieChart } from '@mui/icons-material';
+import { Link } from 'react-router-dom';
+import { CreditCard, SignalCellularAlt } from '@mui/icons-material';
+import { useNavigate } from 'react-router-dom';
 
-const Wallet = () => {
+const Phone = () => {
+    const navigate = useNavigate();
+
+  const handleGoBack = () => {
+    navigate(-1);
+  };
+
   return (
-    <div className='wallet'>
-        <div className='walletTop'>
-            <div className='edit'>
+    <div className='phone'>
+        <nav className='mobilenav'>
+            <img src={logo} alt="logo" className='mobilelogo'/>
+            <div className='mobnot'>
+                <Notidrop />
+                <Imgdrop />
+            </div>  
+        </nav>
+
+        <div className='clicks'>
+            <div className='blue' onClick={handleGoBack}>
+                <SignalCellularAlt />
+            </div>
+            
+            <div className='white' >
+                <Link to="/phone">
+                    <CreditCard />
+                </Link>
+            </div>            
+        </div>
+
+        <div className='phoneTop'>
+            <div className='phoneEdit'>
                 <DriveFileRenameOutline />
             </div>
             
             
-            <div className='pie'>
+            <div className='phonePie'>
                 <ChartRep />
                 <span>38%</span>
                 <div className='editMoney'>$10,600</div>
@@ -23,15 +58,15 @@ const Wallet = () => {
         </div>
         
         <div className='walletDown'>
-            <div className='card'>
+            <div className='phoneCard'>
                 <div className='classHead'>
                     <h4>My Card</h4>
                     <MoreHoriz />
                 </div>
-                <img src={card} alt="card" className='visacard'/>
+                <img src={card} alt="card" className='phoneVisacard'/>
             </div>
 
-            <div className='transact'>
+            <div className='phoneTransact'>
                 <div className='tranHead'>
                     <h4>Transaction</h4>
                     <AddBox style={{color: "#FF0000"}}/>
@@ -82,9 +117,16 @@ const Wallet = () => {
             </div>
         </div>
         
-        
+        <footer className='foot'>
+            <div className='footActive'>
+                <HomeIcon style={{color: "#FF0000"}}/>
+            </div>
+            <PieChart />
+            <ModeComment />
+            <AccountBalanceWallet />
+        </footer>
     </div>
   )
 }
 
-export default Wallet;
+export default Phone;

@@ -2,13 +2,16 @@ import React from "react";
 import { Chart } from "react-google-charts";
 
 export const data = [
-  ["Month", "Approved", "Declined"],
-  ["jan", 50, 28],
-  ["feb", 85, 55],
-  ["mar", 54, 55],
-  
+  ["Month", "A", "B"],
+  ["Nov", 5, 2],
+  ["Dec", 8, 5],
+  ["Jan", 5, 5],
+  ["Feb", 5, 2],
+  ["Mar", 8, 5],
+  ["Apr", 5, 5],
+  ["May", 5, 2],
+  ["Jun", 8, 5],
 ];
-
 
 
 const ChartStat = () => {

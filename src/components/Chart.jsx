@@ -1,14 +1,21 @@
 import React from 'react'
 import './Chart.css'
+import lily from '../assets/lily.png'
 import bullish from '../assets/bullish.svg'
 import bearish from '../assets/bearish.svg'
-import Chartbox from './Chartbox'
-import profile from '../assets/profile.png'
+import Chartbox from './charts/Chartbox'
 import { Avatar } from '@mui/material'
-import { AccessTimeFilled, PlayCircle, Star } from '@mui/icons-material'
-import ChartStat from './ChartStat'
+import { AccessTimeFilled, KeyboardArrowRight, PlayCircle, Star } from '@mui/icons-material'
+import ChartStat from './charts/ChartStat'
 
 const Chart = () => {
+    const years = [];
+    const currentYear = new Date().getFullYear();
+    for (let i = currentYear; i >= currentYear - 100; i--) {
+        years.push(i);
+    }
+    
+
   return (
     <div className='chart'>
         <div className='bulldata'>
@@ -38,9 +45,16 @@ const Chart = () => {
         </div>
 
         <div className='statistics'>
-            <div>
+            <div className='statHead'>
                 <h2>Statistics</h2>
-                <p>year</p>
+                <select id="year" className='rep-year'>
+                    <option value="">Year</option>
+                    {years.map((year) => (
+                        <option key={year} value={year}>
+                            {year}
+                        </option>
+                    ))}
+                </select>
             </div>
             <ChartStat />
         </div>
@@ -52,13 +66,13 @@ const Chart = () => {
 
             <div className='post'>
                 <div className='poster'>
-                    <Avatar alt="my profile" src={profile} sx={{ width: 24, height: 24 }}/>
+                    <Avatar alt="profile" src={lily} sx={{ width: 24, height: 24 }}/>
                     <div className='posterInfo'>
                         <h5>Lily Donovan</h5>
                         <p>Business trainer</p>
                     </div>
                 </div>
-                <h4 style={{fontSize: "14px"}}>How to properly manage your personal budget</h4>
+                <h4 style={{fontSize: "14px", margin: "0"}}>How to properly manage your personal budget</h4>
                 <div className='activity'>
                     <div className='actIcon'>
                         <PlayCircle style={{color: "#3326AE"}}/>
@@ -77,6 +91,7 @@ const Chart = () => {
                     <p>5 days ago</p>
                     <button className='whenBtn'>
                         <p>connect</p>
+                        <KeyboardArrowRight style={{width: "15px", height: "15px"}}/>
                     </button>
                 </div>
             </div>
